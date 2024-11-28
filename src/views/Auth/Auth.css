@@ -1,0 +1,104 @@
+.auth{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    gap: 20px;
+}
+
+.auth-login-header{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.auth-login-header .hand{
+    font-size: 40px;
+}
+
+.auth-login-header h2{
+    font-size: 34px;
+}
+
+.auth-login-header span{
+    color: silver;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 330px;
+    gap: 20px;
+}
+
+form .inputs{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+form .inputs input{
+    padding: 10px 14px;
+    font-size: 20px;
+    border-radius: 5px;
+    border: 2px solid rgba(192, 192, 192, 0.425);
+    caret-color: #9b5de5;
+}
+
+form .inputs input:focus{
+    border: 2px solid #9b5de5;
+    outline: none;
+}
+
+
+form button{
+    padding: 12px 10px;
+    font-size: 20px;
+    background-color: #9b5de5;
+    color: white;
+    border-radius: 5px;
+    border: none;
+}
+
+.social-media{
+    display: flex;
+    flex-direction: column;
+    width: 330px;
+    gap: 20px;
+}
+
+.or{
+    text-align: center;
+    color: silver;
+}
+
+.social{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social button{
+    background-color: transparent;
+    border: none;
+}
+
+.social-icon img{
+    object-fit: 1;
+    width: 40px;
+}
+
+.social-media span a{
+    text-decoration: none;
+    color: #9b5de5;
+    font-size: 16px;
+}
+
+@media screen and (max-width:767px){
+    .social-icon img{
+        width: 40px;
+    }
+}
