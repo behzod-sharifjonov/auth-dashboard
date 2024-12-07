@@ -1,0 +1,49 @@
+.dashboard {
+    display: flex;
+    position: relative;
+    background-color: silver;
+}
+
+.dashboard-aside {
+    width: 18%;
+    position: fixed;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background-color: #ffffff;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.dashboard-main {
+    width: 82%;
+    position: absolute;
+    height: 100vh;
+    right: 0;
+    bottom: 0;
+    top: 0;
+}
+
+@media screen and (max-width: 1023px) {
+    .dashboard-aside {
+        width: 7%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .dashboard-main {
+        width: 93%;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .dashboard-aside {
+        display: none;
+    }
+
+    .dashboard-main{
+        width: 100%;
+    }
+}

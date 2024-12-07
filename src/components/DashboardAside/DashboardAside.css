@@ -1,0 +1,118 @@
+aside {
+    padding: 20px 7%;
+    position: relative;
+    height: 100%;
+    /* background-color: aqua; */
+}
+
+.aside-logo {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    gap: 10px;
+}
+
+.aside-components {
+    padding-top: 50px;
+}
+
+.logo-design {
+    background-color: #5D5FEF;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+.aside-add-product button {
+    width: 80%;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 5px;
+    border: none;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding: 5px 8px;
+    justify-content: space-around;
+    background-color: #9b5de5;
+    color: white;
+}
+
+
+.header-bottom-menu {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.header-bottom-menu li {
+    display: inline-flex;
+    cursor: pointer;
+    align-items: center;
+    transition: 0.4s;
+    gap: 10px;
+    padding: 10px 14px;
+    font-size: 21px;
+    color: #737791;
+}
+
+.header-bottom-menu li span {
+    font-size: 16px;
+}
+
+.header-bottom-menu li.active {
+    background-color: #5D5FEF;
+    padding: 10px 14px;
+    border-radius: 8px;
+    width: 100%;
+    /* Active bo'lgan sahifadagi elementning foni qizil */
+    color: white;
+}
+
+.aside-other-components {
+    position: absolute;
+    bottom: 40px;
+    width: 85%;
+}
+
+.side-menu {
+    width: 300px;
+    height: 100vh;
+    background-color: blue;
+    z-index: 999;
+}
+
+
+@media screen and (max-width:1023px) {
+
+    .aside-components .header-bottom-menu li span,
+    .aside-other-components .header-bottom-menu li span,
+    .aside-logo h2 {
+        display: none;
+    }
+
+    .logo-design {
+        width: 45px;
+        height: 45px;
+    }
+
+    .header-bottom-menu li {
+        justify-content: center;
+    }
+
+    .aside-icon {
+        font-size: 18px;
+    }
+
+    .header-bottom-menu li.active{
+        padding: 10px 12px;
+    }
+}
+
+
+@media screen and (max-width:767px) {}
