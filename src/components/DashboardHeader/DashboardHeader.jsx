@@ -18,15 +18,15 @@ function DashboardHeader() {
             </div>
             <div className="dashboard-header-profile-icon">
                 <div className="dashboard-header-notification">
-                    <IoMdNotificationsOutline className='dashboard-header-notification' />
+                    <IoMdNotificationsOutline className='dashboard-header-notification-icon' />
                 </div>
                 <div className="dashboard-header-profile">
+                <div className="dashboard-header-profile-logo">
+                        <img src="https://png.pngtree.com/png-clipart/20231019/original/pngtree-user-profile-avatar-png-image_13369988.png" alt="" />
+                    </div>
                     <div className="dashboard-header-profile-data">
                         <h3>Elena</h3>
                         <span>Admin</span>
-                    </div>
-                    <div className="dashboard-header-profile-logo">
-                        <img src="https://png.pngtree.com/png-clipart/20231019/original/pngtree-user-profile-avatar-png-image_13369988.png" alt="" />
                     </div>
                 </div>
             </div>

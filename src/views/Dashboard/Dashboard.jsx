@@ -13,18 +13,22 @@ function Dashboard() {
                 <DashboardAside />
             </div>
             <div className="dashboard-main">
-                <DashboardHeader />
-                <Routes>
-                    <Route path="analitic" element={<Analitic />} />
-                    <Route path="add-product" element={<h1>Лучшие объявления</h1>} />
-                    <Route path="discounts-start" element={<h1>Объявления о начале скидки</h1>} />
-                    <Route path="landing" element={<Landing />} />
-                    <Route path="library" element={<h1>Скидки рядом</h1>} />
-                    <Route path="paused-ads" element={<h1>Остановленные объявления</h1>} />
-                    <Route path="favorites" element={<h1>Избранные объявления</h1>} />
-                    <Route path="profile" element={<h1>Профиль пользователя</h1>} />
-                    <Route path="settings" element={<h1>Настройки</h1>} />
-                </Routes>
+                <div className="dashboard-container">
+                    <DashboardHeader />
+                    <div className='dashboard-pages'>
+                        <Routes>
+                            <Route path="analitic" element={<Analitic />} />
+                            <Route path="add-product" element={<h1>Лучшие объявления</h1>} />
+                            <Route path="discounts-start" element={<h1>Объявления о начале скидки</h1>} />
+                            <Route path="landing" element={<Landing />} />
+                            <Route path="library" element={<h1>Скидки рядом</h1>} />
+                            <Route path="paused-ads" element={<h1>Остановленные объявления</h1>} />
+                            <Route path="favorites" element={<h1>Избранные объявления</h1>} />
+                            <Route path="profile" element={<h1>Профиль пользователя</h1>} />
+                            <Route path="settings" element={<h1>Настройки</h1>} />
+                        </Routes>
+                    </div>
+                </div>
             </div>
         </div>
     )

@@ -80,15 +80,27 @@ aside {
     width: 85%;
 }
 
+
+
 .side-menu {
-    width: 300px;
+    position: absolute;
+    left: 0;
+    top: 0;
     height: 100vh;
-    background-color: blue;
+    width: 250px;
+    background-color: #333;
+    color: white;
+    transform: translateX(-100%);
+    /* transition: transform 0.3s ease-in-out; */
     z-index: 999;
-}
+  }
+  
+  .side-menu.open {
+    transform: translateX(0);
+  }
+  
 
-
-@media screen and (max-width:1023px) {
+@media screen and (max-width:1030px) {
 
     .aside-components .header-bottom-menu li span,
     .aside-other-components .header-bottom-menu li span,

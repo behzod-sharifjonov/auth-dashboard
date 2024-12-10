@@ -10,7 +10,7 @@ export const  Context = createContext()
 
 function App() {
 
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(true);
 
   return (
     <Context.Provider value={{isMenuOpen, setIsMenuOpen}}>

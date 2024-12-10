@@ -2,7 +2,9 @@ import React from 'react'
 
 function Analitic() {
   return (
-    <div>Analitic</div>
+    <div>
+      
+    </div>
   )
 }
 
