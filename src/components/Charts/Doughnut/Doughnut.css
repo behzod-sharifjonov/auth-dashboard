@@ -1,6 +1,25 @@
-.doughnut-chart{
+.doughnut-chart {
     background-color: white;
     width: 35%;
-    padding: 10px;
+    padding: 12px;
     border-radius: 10px;
+}
+
+.doughnut-chart h2{
+    font-size: 20px;
+}
+
+@media screen and (max-width:1030px) {
+    .doughnut-chart{
+        padding: 10px;
+    }
+    .doughnut-chart h2 {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width:767px){
+    .doughnut-chart {
+        width: 100%;
+    }
 }

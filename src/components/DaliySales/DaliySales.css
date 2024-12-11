@@ -89,6 +89,11 @@
     .daliy-sales-card-icon>* {
         font-size: 20px;
     }
+
+    .daliy-sales-card-text h1{
+        font-size: 20px;
+    }
+
     .daliy-sales-card-text span{
         font-size: 12px;
     }
@@ -98,5 +103,9 @@
     .daliy-sales-container{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .daliy-sales-card{
+        padding-left: 10px;
     }
 }

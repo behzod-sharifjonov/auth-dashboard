@@ -1,7 +1,40 @@
-.revenue-chart{
+.revenue-chart {
     background-color: white;
     width: 65%;
-    padding: 10px;
+    padding: 12px;
     border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
     /* height: 400px; */
+}
+
+.revenue-chart-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.revenue-chart-title h2{
+    font-size: 18px;
+}
+
+.revenue-btns {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.revenue-btns button {
+    background-color: transparent;
+    border: none;
+}
+
+@media screen and (max-width:1030px) {}
+
+@media screen and (max-width:767px){
+    .revenue-chart{
+        width: 100%;
+    }
 }
