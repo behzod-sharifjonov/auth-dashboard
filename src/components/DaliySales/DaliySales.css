@@ -1,0 +1,102 @@
+.daliy-sales {
+    background-color: white;
+    padding: 10px 10px;
+    width: 100%;
+    border-radius: 10px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.daliy-sales-container {
+    /* height: 20vh; */
+    display: flex;
+    /* grid-template-columns: repeat(4, 1fr); */
+    gap: 10px;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+.daliy-sales-card {
+    width: 280px;
+    height: 120px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    gap: 20px;
+}
+
+.daliy-sales-card-1 {
+    background-color: #FFE2E5;
+}
+
+.daliy-sales-card-2 {
+    background-color: #FFF4DE;
+}
+
+.daliy-sales-card-3 {
+    background-color: #DCFCE7;
+}
+
+.daliy-sales-card-4 {
+    background-color: #F3E8FF;
+}
+
+.daliy-sales-card-icon {
+    padding: 10px;
+    border-radius: 50px;
+}
+
+.daliy-sales-card-1 .daliy-sales-card-icon {
+    background-color: #FA5A7D;
+}
+
+.daliy-sales-card-2 .daliy-sales-card-icon {
+    background-color: #FF947A;
+}
+
+.daliy-sales-card-3 .daliy-sales-card-icon {
+    background-color: #3CD856;
+}
+
+.daliy-sales-card-4 .daliy-sales-card-icon {
+    background-color: #BF83FF;
+}
+
+.daliy-sales-card-icon>* {
+    font-size: 30px;
+    color: white;
+}
+
+.daliy-sales-card-text h1 {
+    color: #151D48;
+}
+
+.daliy-sales-card-text span {
+    color: #425166;
+}
+
+@media screen and (max-width: 1030px){
+    .daliy-sales-card{
+        width: 100%;
+        height: 100px;
+        gap: 10px;
+        padding-left: 10px;
+    }
+
+    .daliy-sales-card-icon>* {
+        font-size: 20px;
+    }
+    .daliy-sales-card-text span{
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width:767px){
+    .daliy-sales-container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

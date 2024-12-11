@@ -1,7 +1,16 @@
-.pages-top{
-    top: 500px;
-    position: absolute;
-    left: 20%;
-    bottom: 0;
-    right: 0;
+.analitic{
+    padding: 10px;
+}
+
+.analitic-container{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.analitic-second-container{
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    gap: 10px;
 }

@@ -8,3 +8,9 @@
 body{
   background-color: #f5f9fe;
 }
+
+.display-flex{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
