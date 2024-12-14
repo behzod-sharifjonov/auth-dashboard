@@ -1,7 +1,7 @@
 import React from 'react'
 import './Analitic.css'
 import DaliySales from '../../../components/DaliySales/DaliySales'
-import DoughnutChart from '../../../components/Charts/Doughnut/Doughnut'
+// import DoughnutChart from '../../../components/Charts/Doughnut/Doughnut'
 // import RevenueChart from '../../../components/Charts/AnaliticChart/RevenueChart'
 
 function Analitic() {
@@ -13,7 +13,7 @@ function Analitic() {
         </div>
         <div className="analitic-second-container">
           {/* <RevenueChart /> */}
-          <DoughnutChart />
+          {/* <DoughnutChart /> */}
         </div>
         {/* <div className="analitic-third-container">
           <DaliySales />
