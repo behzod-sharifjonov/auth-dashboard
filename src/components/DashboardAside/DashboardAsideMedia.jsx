@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 import { Context } from '../../App';
-import './MenuModal.css'; // The CSS file for the modal
+import './MenuModal.css';
 import { FaChartPie } from 'react-icons/fa';
 import { FiBarChart2 } from 'react-icons/fi';
 import { FaBasketShopping } from 'react-icons/fa6';
@@ -9,9 +9,13 @@ import { AiOutlineLineChart } from 'react-icons/ai';
 import { BsChatLeftDots } from 'react-icons/bs';
 import { IoChatbox } from 'react-icons/io5';
 import { IoIosSettings } from 'react-icons/io';
+import { useNavigate } from 'react-router-dom';
+import Logo from '../../assets/logo.svg'
+import { IoCloseOutline } from "react-icons/io5";
 
 function MenuModal() {
-    const { isMenuOpen, setIsMenuOpen } = useContext(Context); // Getting context for menu state
+    const { isMenuOpen, setIsMenuOpen } = useContext(Context);
+    const navigate = useNavigate()
 
     const menuItems = [
         { name: 'Dashboard', path: '/dashboard/analitic', icon: <FaChartPie className='aside-icon' /> },
@@ -25,29 +29,39 @@ function MenuModal() {
     ];
 
     const handleItemClick = (path) => {
-        // Handle menu item click, navigate or close the menu
         console.log(`Navigating to ${path}`);
-        setIsMenuOpen(false); // Close the menu when an item is clicked
+        navigate(path);
+        setIsMenuOpen(false);
     };
 
     return (
-        <div className={`menu-modal ${isMenuOpen ? 'open' : ''}`}>
-            <div className="modal-content">
-                <button className="close-btn" onClick={() => setIsMenuOpen(false)}>X</button>
-                <ul className="menu-list">
-                    {menuItems.map((item, index) => (
-                        <li
-                            key={index}
-                            className={`menu-item ${window.location.pathname.startsWith(item.path) ? 'active' : ''}`}
-                            onClick={() => handleItemClick(item.path)}
-                        >
-                            {item.icon}
-                            <span className="menu-text">{item.name}</span>
-                        </li>
-                    ))}
-                </ul>
+        isMenuOpen && (
+            <div className={`menu-modal`}>
+                <div className="modal-content">
+                    <div className="menu-first">
+                        <div className="aside-logo">
+                            <div className="logo-design">
+                                <img src={Logo} alt="Loading..." />
+                            </div>
+                            <h2>Dabang</h2>
+                        </div>
+                        <button className="close-btn" onClick={() => setIsMenuOpen(false)}><IoCloseOutline /></button>
+                    </div>
+                    <ul className="header-bottom-menu">
+                        {menuItems.map((item, index) => (
+                            <li
+                                key={index}
+                                className={`menu-item ${window.location.pathname.startsWith(item.path) ? 'active' : ''}`}
+                                onClick={() => handleItemClick(item.path)}
+                            >
+                                {item.icon}
+                                <span className="menu-text">{item.name}</span>
+                            </li>
+                        ))}
+                    </ul>
+                </div>
             </div>
-        </div>
+        )
     );
 }
 

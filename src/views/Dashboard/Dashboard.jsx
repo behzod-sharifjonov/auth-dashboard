@@ -5,6 +5,7 @@ import DashboardAside from '../../components/DashboardAside/DashboardAside'
 import './Dashboard.css'
 import Landing from '../Landing/Landing'
 import Analitic from './Analitic/Analitic'
+import MenuModal from '../../components/DashboardAside/DashboardAsideMedia'
 
 function Dashboard() {
     return (
@@ -15,6 +16,7 @@ function Dashboard() {
             <div className="dashboard-main">
                 <div className="dashboard-container">
                     <DashboardHeader />
+                <MenuModal />
                     <div className='dashboard-pages'>
                         <Routes>
                             <Route path="analitic" element={<Analitic />} />

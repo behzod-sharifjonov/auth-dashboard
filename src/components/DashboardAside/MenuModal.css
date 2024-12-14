@@ -1,0 +1,120 @@
+/* Modal container */
+.menu-modal {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.6); /* Dark overlay */
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    z-index: 100000;
+    opacity: 0;
+    animation: fadeIn 0.5s forwards; /* Fade-in animation */
+}
+
+.menu-first{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Modal content box */
+.modal-content {
+    background-color: #fff;
+    width: 300px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    position: relative;
+    transform: translateY(-20px); /* Starting point for slide effect */
+    opacity: 0;
+    animation: slideIn 0.5s forwards; /* Slide-in animation */
+}
+
+/* Close button */
+.close-btn {
+    background-color: transparent;
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+/* Menu list */
+.menu-list {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+/* Menu item */
+.menu-item {
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    margin-bottom: 15px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.menu-item.active{
+    color: white!important;
+}
+
+/* Menu text */
+.menu-text {
+    font-size: 16px;
+    /* color: #737791; */
+}
+
+/* Responsive adjustments */
+@media screen and (max-width:767px) {
+    .modal-content {
+        width: 80%;
+        height: 100vh;
+    }
+
+    .header-bottom-menu li.active{
+        padding: 14px 10px;
+    }
+
+    .header-bottom-menu{
+        padding: 30px 0;
+    }
+
+    .header-bottom-menu li {
+        justify-content: left;
+        /* padding: 10px 0; */
+    }
+
+    .menu-item {
+        padding: 10px;
+    }
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Slide-in animation */
+@keyframes slideIn {
+    from {
+        transform: translateX(-20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+

@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from '../../../untils/axios';
 import { useNavigate } from 'react-router-dom';
+import Dashboard from '../Dashboard';
 
 const AdminProfile = () => {
   const [profileData, setProfileData] = useState(null);
@@ -49,9 +50,7 @@ const AdminProfile = () => {
 
   return (
     <div>
-      <h2>Admin Profile</h2>
-      <p><strong>Username:</strong> {profileData.username}</p>
-      <p><strong>Email:</strong> {profileData.email}</p>
+      <Dashboard />
     </div>
   );
 };

@@ -7,11 +7,11 @@ import { RiMenu2Line } from "react-icons/ri";
 
 function DashboardHeader() {
 
-    const {setIsMenuOpen, isMenuOpen} = useContext(Context)
+    const {setIsMenuOpen} = useContext(Context)
 
     return (
         <header className='dashboard-header'>
-            <button className='dashboard-toggle-aside' onClick={()=> setIsMenuOpen(!isMenuOpen)}><RiMenu2Line /></button>
+            <button className='dashboard-toggle-aside' onClick={()=> setIsMenuOpen(true)}><RiMenu2Line /></button>
             <div className="dashboard-header-input">
                 <IoSearch className='dashboard-header-input-icon' />
                 <input type="text" placeholder='search somethings...' />

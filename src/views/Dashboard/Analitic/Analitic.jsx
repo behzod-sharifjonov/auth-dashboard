@@ -1,8 +1,8 @@
 import React from 'react'
 import './Analitic.css'
 import DaliySales from '../../../components/DaliySales/DaliySales'
-import RevenueChart from '../../../components/Charts/analiticChart/AnaliticChart'
 import DoughnutChart from '../../../components/Charts/Doughnut/Doughnut'
+// import RevenueChart from '../../../components/Charts/AnaliticChart/RevenueChart'
 
 function Analitic() {
   return (
@@ -12,7 +12,7 @@ function Analitic() {
           <DaliySales />
         </div>
         <div className="analitic-second-container">
-          <RevenueChart/>
+          {/* <RevenueChart /> */}
           <DoughnutChart />
         </div>
         {/* <div className="analitic-third-container">

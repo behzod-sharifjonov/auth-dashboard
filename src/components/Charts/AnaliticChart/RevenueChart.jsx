@@ -1,13 +1,21 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Bar } from 'react-chartjs-2';
-import { Chart as ChartJS, CategoryScale, LinearScale, BarElement, PointElement, LineElement, Title, Tooltip, Legend } from 'chart.js';
-import './AnaliticChart.css'
+import { Chart as ChartJS, CategoryScale, LinearScale, BarElement, LineElement, PointElement, Title, Tooltip, Legend } from 'chart.js';
+import './AnaliticChart.css';  // O'zingizning CSS faylingiz
 
-// Register the components for ChartJS
-ChartJS.register(CategoryScale, LinearScale, BarElement, PointElement, LineElement, Title, Tooltip, Legend);
+// Register the necessary components for ChartJS
+ChartJS.register(
+    CategoryScale,
+    LinearScale,
+    BarElement,
+    LineElement,  // This is for the line chart
+    PointElement, // Points for line chart
+    Title,
+    Tooltip,
+    Legend
+);
 
 const RevenueChart = () => {
-
     // Data for the chart
     const data = {
         labels: ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'],
@@ -57,9 +65,6 @@ const RevenueChart = () => {
             },
         },
     };
-
-
-
 
     return (
         <div className='revenue-chart'>
