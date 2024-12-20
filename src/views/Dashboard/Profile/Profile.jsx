@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import axios from '../../../untils/axios';
 import { useNavigate } from 'react-router-dom';
 import Dashboard from '../Dashboard';
+import Loader from '../../../container/Loader/Loader';
 
 const AdminProfile = () => {
   const [profileData, setProfileData] = useState(null);
@@ -45,7 +46,7 @@ const AdminProfile = () => {
   }
 
   if (!profileData) {
-    return <div>Loading profile...</div>;
+    return <Loader /> ;
   }
 
   return (

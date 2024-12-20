@@ -1,0 +1,22 @@
+.table-container {
+  width: 100%;
+}
+
+table {
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+}
+
+tr {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  width: 100%;
+  text-align: left;
+  padding: 7px;
+}
+
+td{
+    color: silver;
+    font-size: 12px;
+}
