@@ -1,5 +1,5 @@
 .table-container {
-  width: 100%;
+  width: 65%;
 }
 
 table {
@@ -8,15 +8,76 @@ table {
   border-radius: 10px;
 }
 
-tr {
+.table-container tr {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: 150px 190px 153px 140px 1fr;
   width: 100%;
   text-align: left;
-  padding: 7px;
+  align-items: center;
+  padding: 14px 20px;
 }
 
-td{
-    color: silver;
-    font-size: 12px;
+thead tr{
+  border-bottom: 1px solid rgba(225, 225, 225, 0.475);
+}
+
+tbody {
+  width: 100%;
+}
+
+td {
+  color: rgb(183, 182, 182);
+  font-size: 14px;
+}
+
+.status-to-do {
+  background-color: #0ca4fa1a;
+  color: #009dff;
+  padding: 5px 0;
+  width: 70px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.status-doing {
+  background-color: #ddf95338;
+  color: #dcdc26;
+  /* color: yellow; */
+  padding: 5px 0;
+  width: 70px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.status-done {
+  background-color: #3ac60f1a;
+  color: green;
+  padding: 5px 0;
+  width: 70px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.status-lated{
+    background-color: #fa0c201a;
+    color: red;
+    padding: 5px 0;
+    width: 70px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+tbody tr:nth-child(even){
+background-color: rgba(246, 246, 246, 0.514);
+}
+
+@media screen and (max-width: 767px) {
+  tr {
+    width: 100%;
+    grid-template-columns: repeat(5, 1fr);
+    /* font-size: 10px; */
+  }
+  .table-container {
+    width: 100%;
+  }
 }

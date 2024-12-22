@@ -15,8 +15,16 @@
     gap: 10px;
 }
 
+.analitic-third-container{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 10px;
+}
+
 @media screen and (max-width:767px) {
-    .analitic-second-container{
+    .analitic-second-container,
+    .analitic-third-container{
         display: grid;
         grid-template-columns: repeat(1, 1fr);
     }

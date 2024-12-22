@@ -24,7 +24,7 @@ const AdminLogin = () => {
 
       localStorage.setItem('adminToken', access_token);
 
-      navigate('/admin/profile');
+      navigate('/dashboard/analitic');
     } catch (err) {
       setError('Login failed. Please check your credentials.');
     } finally {

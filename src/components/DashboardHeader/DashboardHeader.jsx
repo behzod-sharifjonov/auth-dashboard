@@ -25,7 +25,7 @@ function DashboardHeader() {
                         <img src="https://png.pngtree.com/png-clipart/20231019/original/pngtree-user-profile-avatar-png-image_13369988.png" alt="" />
                     </div>
                     <div className="dashboard-header-profile-data">
-                        <h3>Elena</h3>
+                        <h3>Fozil</h3>
                         <span>Admin</span>
                     </div>
                 </div>
