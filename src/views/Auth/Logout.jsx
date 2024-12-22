@@ -31,7 +31,7 @@ const AdminRegister = () => {
       const { access_token } = response.data;
       localStorage.setItem('adminToken', access_token);
 
-      navigate('/admin/profile');
+      navigate('/dashboard/analitic');
     } catch (err) {
       console.error('Error during registration:', err);
 
@@ -90,7 +90,7 @@ const AdminRegister = () => {
             <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/X_icon.svg/2048px-X_icon.svg.png" alt="" />
           </button>
         </div>
-        <span>Don't have an account? <NavLink to={'/admin/login'}>Sign in</NavLink></span>
+        <span>If you have an account? <NavLink to={'/admin/login'}>Sign in</NavLink></span>
       </div>
     </div>
   );

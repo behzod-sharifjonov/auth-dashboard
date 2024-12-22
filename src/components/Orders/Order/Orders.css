@@ -11,13 +11,14 @@ table {
 .table-container tr {
   display: grid;
   grid-template-columns: 150px 190px 153px 140px 1fr;
+
   width: 100%;
   text-align: left;
   align-items: center;
   padding: 14px 20px;
 }
 
-thead tr{
+thead tr {
   border-bottom: 1px solid rgba(225, 225, 225, 0.475);
 }
 
@@ -58,24 +59,71 @@ td {
   text-align: center;
 }
 
-.status-lated{
-    background-color: #fa0c201a;
-    color: red;
-    padding: 5px 0;
-    width: 70px;
-    border-radius: 5px;
-    text-align: center;
+.status-lated {
+  background-color: #fa0c201a;
+  color: red;
+  padding: 5px 0;
+  width: 70px;
+  border-radius: 5px;
+  text-align: center;
 }
 
-tbody tr:nth-child(even){
-background-color: rgba(246, 246, 246, 0.514);
+tbody tr:nth-child(even) {
+  background-color: rgba(246, 246, 246, 0.514);
+}
+
+@media screen and (max-width: 1030px) {
+  .table-container {
+    width: 80%;
+  }
+  .table-container tr {
+    grid-template-columns: 100px 135px 100px 60px 1fr;
+    padding: 10px;
+    font-size: 12px;
+  }
+  .status-to-do {
+    width: 50px;
+  }
+  .status-doing {
+    width: 50px;
+  }
+  .status-done {
+    width: 50px;
+  }
+  .status-lated {
+    width: 50px;
+  }
+  .table-container td{
+    font-size: 10px;
+  }
 }
 
 @media screen and (max-width: 767px) {
   tr {
     width: 100%;
-    grid-template-columns: repeat(5, 1fr);
-    /* font-size: 10px; */
+    font-size: 10px;
+    font-size: 8px;
+  }
+
+  .table-container tr {
+    grid-template-columns: 60px 100px 80px 55px 1fr;
+  }
+
+  .status-to-do {
+    width: 40px;
+  }
+  .status-doing {
+    width: 40px;
+  }
+  .status-done {
+    width: 40px;
+  }
+  .status-lated {
+    width: 40px;
+  }
+
+  tbody tr > * {
+    font-size: 7px;
   }
   .table-container {
     width: 100%;

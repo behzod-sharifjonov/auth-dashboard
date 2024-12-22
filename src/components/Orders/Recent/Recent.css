@@ -9,3 +9,9 @@
     grid-template-columns: 170px 120px 50px 1fr;
     padding: 14px;
 }
+
+@media screen and (max-width:1030px){
+    .recent-container table tr{
+        grid-template-columns: 90px 90px 1fr;
+    }
+}
