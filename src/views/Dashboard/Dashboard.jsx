@@ -6,6 +6,7 @@ import './Dashboard.css'
 import Landing from '../Landing/Landing'
 import Analitic from './Analitic/Analitic'
 import MenuModal from '../../components/DashboardAside/DashboardAsideMedia'
+import Product from './Product/Product'
 
 function Dashboard() {
     return (
@@ -20,7 +21,7 @@ function Dashboard() {
                     <div className='dashboard-pages'>
                         <Routes>
                             <Route path="analitic" element={<Analitic />} />
-                            <Route path="add-product" element={<h1>Лучшие объявления</h1>} />
+                            <Route path="product" element={<Product />} />
                             <Route path="discounts-start" element={<h1>Объявления о начале скидки</h1>} />
                             <Route path="landing" element={<Landing />} />
                             <Route path="library" element={<h1>Скидки рядом</h1>} />

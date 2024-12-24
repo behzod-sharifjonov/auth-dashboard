@@ -1,0 +1,16 @@
+.product {
+  padding: 20px 3%;
+}
+
+.product-card-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 30px;
+}
+
+@media screen and (max-width: 1500px) {
+  .product-card-container {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+  }
+}
