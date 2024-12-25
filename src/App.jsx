@@ -5,12 +5,14 @@ import AdminRegister from './views/Auth/Logout';
 import AdminProfile from './views/Dashboard/Profile/Profile';
 import Dashboard from './views/Dashboard/Dashboard';
 import { createContext, useState } from 'react';
+import { product_data } from './data';
 
 export const  Context = createContext()
 
 function App() {
 
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  console.log(product_data)
 
   return (
     <Context.Provider value={{isMenuOpen, setIsMenuOpen}}>
@@ -20,6 +22,7 @@ function App() {
         <Route path="admin/register" element={<AdminRegister />} />
         <Route path="admin/profile" element={<AdminProfile />} />
         <Route path='dashboard/*' element={<Dashboard />} />
+
       </Routes>
     </Context.Provider>
   );

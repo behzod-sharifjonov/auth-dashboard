@@ -1,35 +1,34 @@
 import React from "react";
 import "./ProductCard.css";
-import product_image from "../../assets/product_image.jpg";
 import { FaTruck } from "react-icons/fa";
 import { FaGift } from "react-icons/fa6";
 import { MdArrowOutward } from "react-icons/md";
 
-function ProductCard() {
+function ProductCard({item_poduct_data, key}) {
   return (
-    <div className="product-card">
+    <div className="product-card" key={key}>
       <div className="product-image">
-        <img src={product_image} alt="" />
+        <img src={item_poduct_data.image} alt="" />
       </div>
       <div className="product-text">
-        <h3>Microsoft</h3> {/* 19 */}
+        <h3>{item_poduct_data.brand.slice(0,19)}</h3> {/* 19 */}
         <span className="product-description">
-          2020 Apple MacBook Air Laptop: Apple M1 Chip, 13”
+          {item_poduct_data.description.slice(0,50)}
         </span>
         {/* 60 */}
         <div className="product-price-discount">
-          <b className="product-price">$1024.99+</b>
-          <span className="product-discount">35% off</span>
+          <b className={item_poduct_data.price.length > 0 ? 'product-price' : 'none'}>{item_poduct_data.price}</b>
+          <span className={item_poduct_data.discount.length > 0 ? 'product-discount' : 'none'}>{item_poduct_data.discount}</span>
         </div>
         <hr />
         <div className="product-additional">
           <div className="product-delivery">
             <FaTruck />
-            Free shiping
+            {item_poduct_data.delivery}
           </div>
           <div className="product-gift">
             <FaGift />
-            Free gifts
+            {item_poduct_data.gifts}
           </div>
         </div>
         <button>
