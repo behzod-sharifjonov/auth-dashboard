@@ -3,10 +3,14 @@ import "./ProductCard.css";
 import { FaTruck } from "react-icons/fa";
 import { FaGift } from "react-icons/fa6";
 import { MdArrowOutward } from "react-icons/md";
+import { useNavigate } from "react-router-dom";
 
 function ProductCard({item_poduct_data, key}) {
+
+    const navigate = useNavigate()
+
   return (
-    <div className="product-card" key={key}>
+    <div className="product-card" key={key} onClick={()=> navigate(`/dashboard/detail/${item_poduct_data.id}`)}>
       <div className="product-image">
         <img src={item_poduct_data.image} alt="" />
       </div>

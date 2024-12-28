@@ -13,7 +13,13 @@ function App() {
 
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   console.log(product_data)
-
+// api/login 
+  // async function refreshToken(){
+  //   const refreshTok=localStorage.getItem("refresh-token");
+  //   try{
+  //     const res=await axios.post
+  //   }
+  // }
   return (
     <Context.Provider value={{isMenuOpen, setIsMenuOpen}}>
       <Routes>
@@ -22,7 +28,7 @@ function App() {
         <Route path="admin/register" element={<AdminRegister />} />
         <Route path="admin/profile" element={<AdminProfile />} />
         <Route path='dashboard/*' element={<Dashboard />} />
-
+        
       </Routes>
     </Context.Provider>
   );

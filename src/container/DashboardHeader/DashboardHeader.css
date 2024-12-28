@@ -87,6 +87,19 @@
     display: none;
 }
 
+.dashboard-header-add-poduct button{
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    border-radius: 10px;
+    border: none;
+    background-color: #0066d21c;
+    color: #0064D2;
+    height: 40px;
+}
+
 .dashboard-header-profile-data {
     width: 100px;
     /* background-color: red; */

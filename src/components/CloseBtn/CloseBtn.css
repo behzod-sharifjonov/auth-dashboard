@@ -1,0 +1,15 @@
+.detail-close{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.detail-close-btn{
+    background-color: #0066d21c;
+    color: #0064D2;
+    font-size: 1px!important;
+    width: 35px;
+    border-radius: 50px;
+    height: 35px;
+    padding: 8px;
+}

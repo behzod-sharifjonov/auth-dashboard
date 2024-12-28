@@ -26,20 +26,20 @@
     color: silver;
 }
 
-form{
+.auth form{
     display: flex;
     flex-direction: column;
     width: 330px;
     gap: 20px;
 }
 
-form .inputs{
+.auth form .inputs{
     display: flex;
     flex-direction: column;
     gap: 5px;
 }
 
-form .inputs input{
+.auth form .inputs input{
     padding: 10px 14px;
     font-size: 20px;
     border-radius: 5px;
@@ -47,13 +47,13 @@ form .inputs input{
     caret-color: #9b5de5;
 }
 
-form .inputs input:focus{
+.auth form .inputs input:focus{
     border: 2px solid #9b5de5;
     outline: none;
 }
 
 
-form button{
+.auth form button{
     padding: 12px 10px;
     font-size: 20px;
     background-color: #9b5de5;

@@ -1,13 +1,20 @@
-import React, { useContext } from 'react'
+import React, { useContext, useEffect } from 'react'
 import './DashboardHeader.css'
 import { IoSearch } from "react-icons/io5";
 import { IoMdNotificationsOutline } from "react-icons/io";
-import { Context } from '../../App';
 import { RiMenu2Line } from "react-icons/ri";
+import { useLocation, useNavigate } from 'react-router-dom';
+import { Context } from '../../App';
 
 function DashboardHeader() {
 
     const {setIsMenuOpen} = useContext(Context)
+
+    const location= useLocation()
+
+    const navigate = useNavigate()
+
+    const isProductPage = location.pathname === '/dashboard/product'
 
     return (
         <header className='dashboard-header'>
@@ -17,6 +24,9 @@ function DashboardHeader() {
                 <input type="text" placeholder='search somethings...' />
             </div>
             <div className="dashboard-header-profile-icon">
+                <div className="dashboard-header-add-poduct">
+                   {isProductPage &&  <button onClick={()=> navigate('/dashboard/add-product')}>+</button>}
+                </div>
                 <div className="dashboard-header-notification">
                     <IoMdNotificationsOutline className='dashboard-header-notification-icon' />
                 </div>
