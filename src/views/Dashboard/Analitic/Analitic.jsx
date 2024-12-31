@@ -14,7 +14,7 @@ function Analitic() {
           <DaliySales />
         </div>
         <div className="analitic-second-container">
-          <RevenueChart />
+          {/* <RevenueChart /> */}
           <DoughnutChart />
         </div>
         <div className="analitic-third-container">
