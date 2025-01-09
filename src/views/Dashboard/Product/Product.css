@@ -24,10 +24,9 @@
   }
 }
 
-
-@media screen and (max-width:767px){
-    .product-card-container{
-        grid-template-columns: repeat(2,1fr);
-        gap: 12px;
-    }
+@media screen and (max-width: 767px) {
+  .product-card-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
 }

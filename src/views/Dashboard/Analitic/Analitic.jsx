@@ -2,7 +2,7 @@ import React from "react";
 import "./Analitic.css";
 import DaliySales from "../../../components/DaliySales/DaliySales";
 import DoughnutChart from "../../../components/Charts/Doughnut/Doughnut";
-import RevenueChart from "../../../components/Charts/AnaliticChart/RevenueChart";
+// import RevenueChart from "../../../components/Charts/AnaliticChart/RevenueChart";
 import Orders from "../../../components/Orders/Order/Orders";
 import Recent from "../../../components/Orders/Recent/Recent";
 
