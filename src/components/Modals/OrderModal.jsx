@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import "./Modal.css";
 import { Context } from "../../App";
 import { IoClose } from "react-icons/io5";
-import product_image from '../../assets/product_image.jpg'
+import product_image from "../../assets/product_image.jpg";
 
 function OrderModal() {
   const { showOrderModal, setShowOrderModal } = useContext(Context);
@@ -17,7 +17,7 @@ function OrderModal() {
           <IoClose />
         </button>
         <div className="modal-image">
-            <img src={product_image} alt="" />
+          <img src={product_image} alt="" />
         </div>
         <div className="modal-text">
           <div className="modal-line">
@@ -34,7 +34,19 @@ function OrderModal() {
           </div>
           <div className="modal-line">
             <b>Status:</b>
-            <span>to do</span>
+            <span
+            //   className={
+            //     item.status === "to do"
+            //       ? "status-to-do"
+            //       : item.status === "doing"
+            //       ? "status-doing"
+            //       : item.status == "done"
+            //       ? "status-done"
+            //       : "status-lated"
+            //   }
+            >
+              to do
+            </span>
           </div>
           <div className="modal-line">
             <b>Trackting:</b>
