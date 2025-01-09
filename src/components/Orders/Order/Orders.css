@@ -71,6 +71,37 @@ tbody tr:nth-child(even) {
   background-color: rgba(246, 246, 246, 0.514);
 }
 
+/* orders all product */
+
+.order-sales-card-1{
+  background-color: #0ca3fa64;
+}
+.order-sales-card-2{
+  background-color: #ddf95338;
+}
+.order-sales-card-3{
+  background-color: #3ac60f1a;
+}
+.order-sales-card-4{
+  background-color: #fa0c201a;
+}
+
+.order-sales-card-1 .daliy-sales-card-icon {
+  background-color: #009dff;
+}
+
+.order-sales-card-2 .daliy-sales-card-icon {
+  background-color: #dcdc26;
+}
+
+.order-sales-card-3 .daliy-sales-card-icon {
+  background-color: green;
+}
+
+.order-sales-card-4 .daliy-sales-card-icon {
+  background-color: red;
+}
+
 @media screen and (max-width: 1030px) {
   .table-container {
     width: 80%;
