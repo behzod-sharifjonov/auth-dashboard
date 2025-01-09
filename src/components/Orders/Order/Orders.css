@@ -11,7 +11,6 @@ table {
 .table-container tr {
   display: grid;
   grid-template-columns: 150px 190px 153px 140px 1fr;
-
   width: 100%;
   text-align: left;
   align-items: center;
@@ -106,7 +105,7 @@ tbody tr:nth-child(even) {
   }
 
   .table-container tr {
-    grid-template-columns: 60px 100px 80px 55px 1fr;
+    grid-template-columns: 70px 100px 80px 55px 1fr;
   }
 
   .status-to-do {
@@ -127,5 +126,8 @@ tbody tr:nth-child(even) {
   }
   .table-container {
     width: 100%;
+  }
+  thead tr th{
+    font-size: 9px!important;
   }
 }

@@ -1,0 +1,23 @@
+.order-page-container {
+  width: 100%;
+  padding: 10px;
+}
+
+.order-page-container .table-container {
+  width: 100%;
+}
+
+.order-page-container .table-container tr {
+  grid-template-columns: 230px 250px 250px 200px 1fr;
+}
+
+@media screen and (max-width: 1030px) {
+  .order-page-container .table-container tr {
+    grid-template-columns: 100px 135px 100px 60px 1fr;
+  }
+}
+@media screen and (max-width: 767px) {
+  .order-page-container .table-container tr {
+    grid-template-columns: 70px 100px 100px 55px 1fr;
+  }
+}

@@ -19,7 +19,7 @@ function DashboardAside() {
     const menuItems = [
         { name: 'Dashboard', path: '/dashboard/analitic', icon: <FaChartPie className='aside-icon' /> },
         { name: 'Leaderboard', path: '/dashboard/leader-board', icon: <FiBarChart2 className='aside-icon' /> },
-        { name: 'Order', path: '/dashboard/landing', icon: <FaBasketShopping className='aside-icon' /> },
+        { name: 'Order', path: '/dashboard/orders', icon: <FaBasketShopping className='aside-icon' /> },
         { name: 'Products', path: '/dashboard/product', icon: <RiShoppingBag4Line className='aside-icon' /> },
         { name: 'Sales Report', path: '/dashboard/library', icon: <AiOutlineLineChart className='aside-icon' /> },
         { name: 'Messages', path: '/dashboard/maps', icon: <BsChatLeftDots className='aside-icon' /> },
