@@ -1,13 +1,16 @@
-import React, { useEffect, useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import axios from '../../../untils/axios'
 import { useNavigate } from 'react-router-dom';
 import OrderUi from './OrderUi';
 import './Orders.css'
+import OrderModal from '../../Modals/OrderModal';
+import { Context } from '../../../App';
 
 function Orders() {
 
   const [lastOrderData, setLastOrderData] = useState([])
   const navigate = useNavigate();
+  const {showOrderModal, setShowOrderModal}=  useContext(Context)
 
   useEffect(() => {
     const fetchProfile = async () => {
@@ -47,6 +50,7 @@ function Orders() {
   return (
     <div className='table-container'>
       <OrderUi item_data={lastOrderData}/>
+      {showOrderModal && <OrderModal />}
     </div>
   )
 }

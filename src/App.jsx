@@ -14,10 +14,12 @@ export const Context = createContext();
 
 function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  console.log(product_data);
+  const [showOrderModal, setShowOrderModal] = useState(false);
 
   return (
-    <Context.Provider value={{ isMenuOpen, setIsMenuOpen }}>
+    <Context.Provider
+      value={{ isMenuOpen, setIsMenuOpen, showOrderModal, setShowOrderModal }}
+    >
       <Suspense fallback={<Loader />}>
         <Routes>
           <Route path="/" element={<Landing />} />
