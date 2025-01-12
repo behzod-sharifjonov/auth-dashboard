@@ -2,8 +2,7 @@ import React, { useContext } from "react";
 import { Context } from "../../../App";
 
 function OrderUiRow({ item, key }) {
-
-  const {showOrderModal, setShowOrderModal}=  useContext(Context)
+  const { showOrderModal, setShowOrderModal } = useContext(Context);
 
   return (
     <tr className={key} onClick={() => setShowOrderModal(true)}>
