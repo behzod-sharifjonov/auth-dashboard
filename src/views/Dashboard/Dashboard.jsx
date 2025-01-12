@@ -10,6 +10,7 @@ import DashboardHeader from '../../container/DashboardHeader/DashboardHeader'
 import DashboardAside from '../../container/DashboardAside/DashboardAside'
 import MenuModal from '../../container/DashboardAside/DashboardAsideMedia'
 import OrderPage from './Orders/OrderPage'
+import LeaderBoard from './LeaderBoard/LeaderBoard'
 
 function Dashboard() {
     return (
@@ -26,7 +27,7 @@ function Dashboard() {
                             <Route path="analitic" element={<Analitic />} />
                             <Route path="product" element={<Product />} />
                             <Route path="add-product" element={<AddProduct />} />
-                            <Route path="discounts-start" element={<h1>Объявления о начале скидки</h1>} />
+                            <Route path="leader-board" element={<LeaderBoard />} />
                             <Route path="orders" element={<OrderPage />} />
                             <Route path="library" element={<h1>Скидки рядом</h1>} />
                             <Route path="paused-ads" element={<h1>Остановленные объявления</h1>} />
