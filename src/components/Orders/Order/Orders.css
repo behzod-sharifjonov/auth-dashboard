@@ -136,7 +136,7 @@ tbody tr:nth-child(even) {
   }
 
   .table-container tr {
-    grid-template-columns: 70px 100px 80px 55px 1fr;
+    grid-template-columns: 70px 95px 80px 55px 1fr;
   }
 
   .status-to-do {

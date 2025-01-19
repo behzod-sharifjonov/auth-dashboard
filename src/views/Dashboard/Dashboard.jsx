@@ -11,6 +11,7 @@ import DashboardAside from '../../container/DashboardAside/DashboardAside'
 import MenuModal from '../../container/DashboardAside/DashboardAsideMedia'
 import OrderPage from './Orders/OrderPage'
 import LeaderBoard from './LeaderBoard/LeaderBoard'
+import AdminProfile from './Profile/Profile'
 
 function Dashboard() {
     return (
@@ -32,9 +33,9 @@ function Dashboard() {
                             <Route path="library" element={<h1>Скидки рядом</h1>} />
                             <Route path="paused-ads" element={<h1>Остановленные объявления</h1>} />
                             <Route path="favorites" element={<h1>Избранные объявления</h1>} />
-                            <Route path="profile" element={<h1>Профиль пользователя</h1>} />
                             <Route path="settings" element={<h1>Настройки</h1>} />
                             <Route path='detail/:id' element={<Detail />} />
+                            <Route path='profile' element={<AdminProfile />} />
                         </Routes>
                     </div>
                 </div>

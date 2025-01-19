@@ -30,7 +30,7 @@ function DashboardHeader() {
                 <div className="dashboard-header-notification">
                     <IoMdNotificationsOutline className='dashboard-header-notification-icon' />
                 </div>
-                <div className="dashboard-header-profile">
+                <div onClick={()=>  navigate('/dashboard/profile')} className="dashboard-header-profile">
                 <div className="dashboard-header-profile-logo">
                         <img src="https://png.pngtree.com/png-clipart/20231019/original/pngtree-user-profile-avatar-png-image_13369988.png" alt="" />
                     </div>
