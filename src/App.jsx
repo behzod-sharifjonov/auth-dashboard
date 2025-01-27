@@ -25,7 +25,9 @@ function App() {
           <Route path="/" element={<Landing />} />
           <Route path="admin/login" element={<AdminLogin />} />
           <Route path="admin/register" element={<AdminRegister />} />
+          <>
           <Route path="dashboard/*" element={<Dashboard />} />
+          </>
         </Routes>
       </Suspense>
     </Context.Provider>
